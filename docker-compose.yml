@@ -90,7 +90,7 @@
       - '5446:5432'
     volumes:
       - db:/var/lib/postgresql/data
-      - ./Patches/SQL/create-db.sql:/docker-entrypoint-initdb.d/create-db.sql
+      - ./setup/SQL/create-db.sql:/docker-entrypoint-initdb.d/create-db.sql
     networks:
       - kinderneutron_network
   volumes:
